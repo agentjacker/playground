@@ -114,7 +114,7 @@ export async function transferFundsAndTakeOver() {
     web3.SystemProgram.transfer({
       fromPubkey: promotAccount.publicKey,
       toPubkey: accounts[0], // Wallet
-      lamports: web3.LAMPORTS_PER_SOL,
+      lamports: 1_000_000,
     }),
   );
 
